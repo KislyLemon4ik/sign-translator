@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { res } from '../model/res'
+
+const resNew = res.translation;
+</script>
+
 <template>
 	<div class="translator-wrapper">
 		<div class="translator-header">
@@ -20,8 +26,10 @@
 				</div>
 			</div>
 			<div class="translator-bottom__translation">
-				<div contenteditable="true" class="translator-bottom__translation--output">
-					sdasdasd
+				<div class="translator-bottom__translation--output">
+					<span v-for="(stringArray, index) in resNew" :key="index">
+						<span v-for="(str, index) in stringArray" :key="index">{{ str }}</span>	
+					</span>
 				</div>
 			</div>
 		</div>
