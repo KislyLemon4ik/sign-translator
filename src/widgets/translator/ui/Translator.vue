@@ -10,18 +10,18 @@ const resNew = res.translation;
 			<div class="translator-header__native-language">
 				<button class="translator-header__native-language--select">English</button>
 			</div>
-			<div class="translator-header__arrows">
+			<button class="translator-header__arrows">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"> 
 					<path fill-rule="evenodd" d="M11.8.603a.5.5 0 0 0-.8.4v2H1a1 1 0 1 0 0 2h10v2a.5.5 0 0 0 .8.4l3.997-3a.5.5 0 0 0 0-.8l-3.997-3ZM5 13.003v2a.5.5 0 0 1-.8.4l-3.997-3a.5.5 0 0 1 0-.8l3.997-3a.5.5 0 0 1 .8.4v2h10a1 1 0 0 1 0 2H5Z" clip-rule="evenodd"></path>
 				</svg>
-			</div>
+			</button>
 			<div class="translator-header__foreign-language">
 				<button class="translator-header__foreign-language--select">Sign language</button>
 			</div>
 		</div>
 		<div class="translator-bottom">
 			<div class="translator-bottom__native-language">
-				<div contenteditable="true" class="translator-bottom__native-language--input">
+				<div contenteditable="true" tabindex="0" class="translator-bottom__native-language--input">
 					daasdas
 				</div>
 			</div>
@@ -66,7 +66,10 @@ $language-hover: #2E2D2F;
 		justify-content: center;
 		align-items: center;
 		width: 40px;
-		height: 40px;		
+		height: 40px;
+
+		border: none;
+		background-color: unset;
 
 		&:hover {
 			background-color: #313134d0;

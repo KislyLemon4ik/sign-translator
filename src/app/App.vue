@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MainPage } from '@/pages/main-page'
+import MainPage from '@/pages/main-page'
 
 </script>
 
@@ -14,6 +14,7 @@ import { MainPage } from '@/pages/main-page'
 {
 	display: flex;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 }
 </style>
