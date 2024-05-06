@@ -11,10 +11,10 @@ const route = useRoute()
 			<div class="vertical-menu">
 				<h1 class="vetrical-menu__title">Sign Translator</h1>
 				<router-link to="/" :class="['vetrical-menu__mode', { 'active' : route.name == 'HomePage' }]">By letters</router-link>
-				<router-link to="/all-over-the-text" :class="['vetrical-menu__mode', { 'active' : route.name == 'TranslationAllOverTheTextPage' }]">All over the text</router-link>
+				<!-- <router-link to="/all-over-the-text" :class="['vetrical-menu__mode', { 'active' : route.name == 'TranslationAllOverTheTextPage' }]">All over the text</router-link> -->
 				<router-link to="/file" :class="['vetrical-menu__mode', { 'active' : route.name == 'TranslateFilePage' }]">Documents</router-link>
 				<router-link to="/history" :class="['vetrical-menu__mode', { 'active' : route.name == 'HistoryPage' }]">History</router-link>
-				<router-link to="/video" :class="['vetrical-menu__mode', { 'active' : route.name == 'TranslateVideoPage' }]">Video</router-link>
+				<!-- <router-link to="/video" :class="['vetrical-menu__mode', { 'active' : route.name == 'TranslateVideoPage' }]">Video</router-link> -->
 			</div>
 		</div>
 		<router-view />
@@ -38,6 +38,7 @@ const route = useRoute()
 {
 	display: flex;
 	flex-basis: 340px;
+	flex-shrink: 0;
 	justify-content: center;
 }
 

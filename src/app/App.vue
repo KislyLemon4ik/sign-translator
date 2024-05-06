@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MainPage from '@/pages/main-page'
 
+localStorage.getItem('history') ? void 0 : localStorage.setItem('history', JSON.stringify([]));
 </script>
 
 <template>
